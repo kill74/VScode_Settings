@@ -1,0 +1,55 @@
+{
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code', monospace",
+  "terminal.integrated.fontFamily": "'Fira Code', monospace",
+  "prettier.bracketSameLine": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "editor.minimap.enabled": false,
+  "git.suggestSmartCommit": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+  "window.titleBarStyle": "custom",
+  "glassit.alpha": 220,
+  "tabnine.experimentalAutoImports": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.renderWhitespace": "none",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "git.autofetch": true,
+  "workbench.colorTheme": "Sublime Material Theme - Dark",
+  "workbench.iconTheme": "eq-material-theme-icons",
+
+  // Neovim-like Configurations
+  "editor.lineNumbers": "relative", // Desativa guias de indentação
+  "editor.lineHeight": 24, // Altura da linha
+  "editor.cursorStyle": "block", // Cursor como bloco
+  "editor.cursorBlinking": "blink", // Cursor piscando
+  "editor.smoothScrolling": true, // Rolagem suave
+  "editor.scrollBeyondLastLine": false, // Evita rolar além da última linha
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.statusBar.visible": false,
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "single",
+  "editor.guides.indentation": false // Desativa as guias de indentação
+}
