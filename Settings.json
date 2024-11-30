@@ -40,11 +40,9 @@
   "workbench.iconTheme": "eq-material-theme-icons",
 
   // Neovim-like Configurations
-  "editor.lineNumbers": "relative", // Desativa guias de indentação
-  "editor.lineHeight": 24, // Altura da linha
+  "editor.lineHeight": 26, // Altura da linha
   "editor.cursorStyle": "block", // Cursor como bloco
   "editor.cursorBlinking": "blink", // Cursor piscando
-  "editor.smoothScrolling": true, // Rolagem suave
   "editor.scrollBeyondLastLine": false, // Evita rolar além da última linha
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
