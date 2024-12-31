@@ -1,53 +1,158 @@
 {
-  "editor.fontLigatures": true,
+  // Editor Settings
   "editor.fontFamily": "'Fira Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 26,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "phase",
+  "editor.smoothScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.indentation": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.parameterHints.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "always",
+  "editor.occurrencesHighlight": "singleFile",
+  "editor.renderControlCharacters": false,
+  "editor.renderLineHighlight": "all",
+  "editor.selectionHighlight": true,
+  "editor.showFoldingControls": "always",
+  "editor.snippetSuggestions": "top",
+
+  // Terminal Settings
   "terminal.integrated.fontFamily": "'Fira Code', monospace",
-  "prettier.bracketSameLine": true,
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.shellIntegration.enabled": true,
+
+  // Workbench Settings
+  "workbench.colorTheme": "One Monokai",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "single",
+  "workbench.statusBar.visible": false,
+  "workbench.startOnWelcomePage": false,
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 10,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.splitSizing": "distribute",
+  "workbench.editor.tabCloseButton": "right",
+  "workbench.editor.tabSizing": "fit",
+  "workbench.editor.wrapTabs": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.productIconTheme": "fluent-icons",
+
+  // File and Auto-Save Settings
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true
+  },
+
+  // Prettier Settings
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[python]": {
-    "editor.formatOnType": true
-  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.autoSave": "afterDelay",
-  "editor.minimap.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+
+  // Git Settings
   "git.suggestSmartCommit": false,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "redhat.telemetry.enabled": false,
-  "window.menuBarVisibility": "compact",
-  "workbench.colorCustomizations": {
-    "terminal.background": "#00000000"
-  },
-  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
-  "window.titleBarStyle": "custom",
-  "glassit.alpha": 220,
-  "tabnine.experimentalAutoImports": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.renderWhitespace": "none",
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.wordWrap": "on",
-  "git.autofetch": true,
-  "workbench.colorTheme": "Sublime Material Theme - Dark",
-  "workbench.iconTheme": "eq-material-theme-icons",
+  "git.autoRepositoryDetection": true,
+  "git.enableSmartCommit": true,
+  "git.ignoreMissingGitWarning": true,
+  "git.showPushSuccessNotification": true,
+  "git.terminalAuthentication": false,
+  "git.useEditorAsCommitInput": true,
+  "git.mergeEditor": true,
+  "git.pruneOnFetch": true,
+  "git.rebaseWhenSync": true,
 
-  // Neovim-like Configurations
-  "editor.lineHeight": 26, // Altura da linha
-  "editor.cursorStyle": "block", // Cursor como bloco
-  "editor.cursorBlinking": "blink", // Cursor piscando
-  "editor.scrollBeyondLastLine": false, // Evita rolar além da última linha
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
-  "workbench.statusBar.visible": false,
-  "workbench.sideBar.location": "right",
-  "workbench.editor.showTabs": "single",
-  "editor.guides.indentation": false // Desativa as guias de indentação
+  // Extensions and Telemetry
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": true,
+
+  // Advanced Settings
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Debugging Settings
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.console.closeOnEnd": true,
+  "debug.console.collapseIdenticalLines": true,
+  "debug.console.fontSize": 12,
+  "debug.console.lineHeight": 1.2,
+  "debug.console.wordWrap": true,
+  "debug.openDebug": "openOnDebugBreak",
+  "debug.saveBeforeStart": "allEditorsInActiveGroup",
+  "debug.showInStatusBar": "always",
+  "debug.toolBarLocation": "docked",
+  "debug.toolBarVisibility": "always",
+  "workbench.editor.tabActionLocation": "right"
 }
